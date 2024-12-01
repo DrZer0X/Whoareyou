@@ -14,44 +14,40 @@ if (locker.id === "03"){
 
 
   
-locker.addEventListener('keyup', (e)=> {
-    if (e.key === "Enter") { {
-        if (locker.value.toLowerCase() === chave) {
-            locker.style.borderColor = 'lime'
-            locker.style.Color = 'lime'
-            locker.style.color = 'lime'
-           entrar()
-           
-        }
-        if(locker.value.toLowerCase() === 'queda inevitavel em portas vazias') {
+locker.addEventListener('keyup', (e) => {
+  if (e.key === "Enter") {
+      const inputValue = locker.value.toLowerCase();
+
+      if (inputValue === chave) {
+          locker.style.borderColor = 'lime';
+          locker.style.color = 'lime';
+          entrar();
+      } else if (inputValue === 'queda inevitavel em portas vazias') {
           const link = document.createElement("a");
-        link.href = "souce/Eu-estou-aqui.mp3"; // Path to your MP3 file
-        link.target = "_blank"; // Open in a new tab
-        link.click(); // Simulate a click to open the link
-        
-          
-        }
-        else {
-            locker.classList.add ("shake");
-            setTimeout(() => {
-                locker.classList.remove ("shake");
-              }, 700); 
-            
-            //window.alert('Acess Denied')
-        }   
-        function entrar(){
-            if (chave === 'prisioneiro') {
-                document.location.href = 'bunny.html';
-            } 
-            if(chave === 'presa'){
-                document.location.href = 'destiny.html';
-            }
-            if(chave === 'a tormenta'){
-              document.location.href = 'darkTruth.html';
+          link.href = "souce/Eu-estou-aqui.mp3"; // Path to your MP3 file
+          link.target = "_blank"; // Open in a new tab
+          link.click();
+      } else {
+          locker.classList.add("shake");
+          setTimeout(() => locker.classList.remove("shake"), 700);
+      }
+
+      function entrar() {
+          switch (chave) {
+              case 'prisioneiro':
+                  document.location.href = 'bunny.html';
+                  break;
+              case 'presa':
+                  document.location.href = 'destiny.html';
+                  break;
+              case 'a tormenta':
+                  document.location.href = 'darkTruth.html';
+                  break;
+              default:
+                  console.error('Unknown chave value');
           }
-        }
-    }
-}  
+      }
+  }
 });
 
 var bunny
