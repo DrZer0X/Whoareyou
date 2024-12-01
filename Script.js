@@ -119,4 +119,4 @@ if(document.getElementById(clicked_id) === document.getElementById('div8')){
     forcaDiv.addEventListener("mouseout", () => {description()});
     function description(){
       messageParagraph.textContent = "Aqui, as verdades não contadas sussurram como ventos entre as paredes da Casa. Cada carta revela o que é, o que foi, e o que ainda será. Mas cuidado: o futuro é um espelho quebrado, e as peças podem ferir.";
-    }
+    }      
