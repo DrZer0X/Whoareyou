@@ -112,13 +112,17 @@ cursor: pointer;
         margin: 10px;
         cursor: pointer;
         z-index: 1;
+        -webkit-box-reflect: below 0px linear-gradient(transparent,#0008);
     }
     .shard{
         width: 30px;
         display: inline-block;
         cursor: pointer;
     }
-    
+    .shard::before, .shard::after{
+        content: "";
+        pos
+    }
     
     .estereggs{
         display: none;
@@ -191,7 +195,7 @@ cursor: pointer;
     position: absolute;
     top: 50%;
     left: 21%;
-    opacity: 2%;
+    opacity: 5%;
   }
 
   #container {
