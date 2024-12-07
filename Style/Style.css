@@ -115,13 +115,9 @@ cursor: pointer;
         -webkit-box-reflect: below 0px linear-gradient(transparent,#0008);
     }
     .shard{
-        width: 30px;
+        width: 100px;
         display: inline-block;
         cursor: pointer;
-    }
-    .shard::before, .shard::after{
-        content: "";
-        pos
     }
     
     .estereggs{
