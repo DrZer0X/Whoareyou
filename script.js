@@ -10,8 +10,6 @@ if (locker.id === "01") {
     chave = 'prisioneiro';
 } else if (locker.id === "02") {
     chave = 'presa';
-} else if (locker.id === "03") {
-    chave = 'tormenta';
 }
 
 if (!chave) {
@@ -23,8 +21,6 @@ locker.addEventListener('keyup', (e) => {
         const inputValue = locker.value.toLowerCase();
 
         if (inputValue === chave) {
-            locker.style.borderColor = 'lime';
-            locker.style.color = 'lime';
             entrar();
         } else if (inputValue === 'queda inevitavel em portas vazias') {
             const link = document.createElement("a");
@@ -33,7 +29,15 @@ locker.addEventListener('keyup', (e) => {
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link); // Clean up
-        } else {
+        } else if (inputValue === 'tormenta') {
+            const link = document.createElement("a");
+            link.href = "https://drive.google.com/file/d/1k_IGVH_TlEEhe6417iXwPZpdiKzY0eWX/view?usp=sharing";
+            link.target = "_blank";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link); // Clean up
+
+        }else {
             locker.classList.add("shake");
             setTimeout(() => locker.classList.remove("shake"), 700);
         }
@@ -45,9 +49,6 @@ locker.addEventListener('keyup', (e) => {
                     break;
                 case 'presa':
                     document.location.href = 'destiny.html';
-                    break;
-                case 'tormenta':
-                    document.location.href = 'darkTruth.html';
                     break;
                 default:
                     console.error('Unknown chave value');
