@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Eyes</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <style>
+        body{
+            background: url(souce/Bg.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+    
+        section{
+            height: 25vh;
+        }
+    </style>
+</head>
+<body class="pag2">
+        <section id="phrases">
+            <p id="p1" style="opacity: 0;">"Acho que você não se arrepende, você propositalmente quebrou os ossos querendo que voltassem ao normal sem sua ajuda. "</p>
+            <p id="p2" style="opacity: 0;">"O peso dos segredos que você guarda é mais real do que os ossos que sustentam seu corpo."
+            </p>
+            <p id="p3" style="opacity: 0;">"Você acha que o passado ficou para trás? Sua cicatrizes rasgadas gritam mais alto que seus próprios pensamentos."</p>
+            <p id="p4" style="opacity: 0;">"Sua carne é fraca, sua mente é quebrada, e ainda assim você se atreve a acreditar que mereceu sobreviver."
+            </p>
+            <p id="p5" style="opacity: 0;">"A culpa não é um fardo para você, é um companheiro. Um amigo fiel que nunca te abandonará."</p>
+            <p id="p6" style="opacity: 0;">"Sua língua é afiada, mas o veneno que carrega só apodrece você por dentro."</p>
+        </section>
+        
+    </article>
+    <input type="password" name="locker" class="locker"  id="02">   
+    <div class="trigger" id="div1" onclick="on_click(this.id)" ></div>
+    <div class="trigger" id="div2" onclick="on_click(this.id)" ></div>
+    <div class="trigger" id="div3" onclick="on_click(this.id)" ></div>
+    <div class="trigger" id="div4" onclick="on_click(this.id)" ></div>
+    <div class="trigger" id="div5" onclick="on_click(this.id)" ></div>
+    <div class="trigger" id="div6" onclick="on_click(this.id)" ></div>
+   
+    <div class="estereggs" id="div8" onclick="on_click2(this.id)" ><img src="souce/Miguel.png" alt=""></div>
+
+    <div class="estereggs" id="div7" onclick="on_click2(this.id)" ><img src="souce/shaco.png" alt=""></div>
+        
+    <div class="estereggs" id="div9" onclick="on_click2(this.id)" ><img src="souce/Dax.png" alt=""></div>
+   
+    <a href="souce/Falta_algo___.png" target="_blank"><img id="qrc" src="/souce/Falta_algo___.png"  alt=""></a>
+    
+    <audio id="myAudio" autoplay loop>
+        <source id="music" src="souce/Bunny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<script src="script.js" type="text/javascript">
+document.getElementById('music').muted = false;
+window.onload = playAudio;
+</script>
+<script src="script2.js" type="text/javascript"></script>
+</body>
+</html>

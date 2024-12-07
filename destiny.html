@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Bem-vindo à mesa dos arcanos!</h1>
+        <p id="clue"> </p>
+        <p id="message" style="height: 80px; width: 98vw;  ">Aqui, as verdades não contadas sussurram como ventos entre as paredes da Casa. Cada carta revela o que é, o que foi, e o que ainda será. Mas cuidado: o futuro é um espelho quebrado, e as peças podem ferir.</p>
+    </section>
+    <div id="container">
+        <div id="torre" onmouseover="description(this.id)" class="flip-card flip-horizontal-left">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="souce/cartas/Torref.png" alt="Uno card Front">
+                </div>
+    
+                <div class="flip-card-back">
+                    <img src="souce/cartas/Torreb.png" alt="Onu card Back">
+                </div>
+            </div>
+        </div>
+
+        <div id="lua" onmouseover="description(this.id)" class="flip-card flip-horizontal-left">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="souce/cartas/Luaf.png" alt="Uno card Front">
+                </div>
+    
+                <div class="flip-card-back">
+                    <img src="souce/cartas/Luab.png" alt="Onu card Back">
+                </div>
+            </div>
+        </div>
+        
+        <div id="forca" onmouseover="description(this.id)" class="flip-card flip-horizontal-left">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="souce/cartas/Enforcadof.png" alt="Uno card Front">
+                </div>
+    
+                <div class="flip-card-back">
+                    <img src="souce/cartas/Enforcadob.png" alt="Onu card Back">
+                </div>
+            </div>
+        </div>
+        <div id="judge" onmouseover="description(this.id)" class="flip-card flip-horizontal-left" >
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="souce/cartas/julgamentof.png" alt="Uno card Front">
+                </div>
+    
+                <div class="flip-card-back">
+                    <img src="souce/cartas/julgamentob.png" alt="Onu card Back">
+                </div>
+            </div>
+        </div>
+    </div>
+    <input style="top: 92%;" type="password" name="locker" class="locker"  id="03">
+
+<script src="Script.js" type="text/javascript"></script>
+<script src="Script3.js" type="text/javascript"></script>
+</body>
+</html>
