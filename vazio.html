@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Verdade Obscura</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <style>
+      
+        #dtruth{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(souce/mirror/mirror1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-image 0.7s ease-in-out;
+        }
+        img{
+            width: 100%;
+        }
+        input{
+            top: 85%;
+            left: 20%;
+            border-color: #a96f63;
+            color: #a96f63;
+        }
+        
+
+        #shard1{ 
+        top: 5%;
+        left: 10%;
+        }
+      
+        #shard3{
+            top: 45%;
+            left: 33%;
+
+            display:none;
+            opacity: 0;
+        }
+       
+        #shard5{
+            top: 40%;
+            left: 43%;
+
+            display:none;
+            opacity: 0;
+        }
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send video to the background */
+  overflow: hidden;
+  
+}
+
+.video-background video {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  min-width: 100%; /* Ensure the video covers the full width */
+  min-height: 100%; /* Ensure the video covers the full height */
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Place content on top of the video */
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+    </style>
+    
+</head>
+<body >
+    <div class="video-background">
+        <video autoplay muted loop>
+          <source src="souce/background-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+
+<div id="dtruth">
+    <div class="shard" id="shard1" onclick="handleClick(this.id)"><img src="souce/mirror/shardh.png" alt=""></div>
+    
+    <div class="shard" id="shard3" onclick="handleClick(this.id)"><img src="souce/mirror/shardg.png" alt=""></div>
+    
+    <div class="shard" id="shard5" onclick="handleClick(this.id)"><img src="souce/mirror/shardf.png" alt=""></div>
+    <input type="password" name="locker" class="locker" id="04">
+
+
+    <script src="script.js" type="text/javascript"></script>
+    <script src="script4.js" type="text/javascript"></script>
+    
+</div>
+</body>
+</html>
