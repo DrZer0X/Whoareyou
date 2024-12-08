@@ -187,6 +187,7 @@ cursor: pointer;
 
   
   #qrc{
+    height:90px;
     width: 90px;
     position: absolute;
     top: 50%;
