@@ -37,6 +37,11 @@ function handleClick(elementId) {
         document.getElementById('dtruth').style.transition = 'background-image 5s ease-in-out';
       document.getElementById('dtruth').style.backgroundImage = "url('souce/mirror/mirror7.png')";
     }, 3500);
+    setTimeout(()=> {
+      document.getElementById('04').style.display = 'block';
+      setTimeout(()=> {
+      document.getElementById('04').style.opacity = '1';}, 100)
+    }, 11500)
     audio5.play(); // Play audio when count is 5
   }
 }
