@@ -93,15 +93,19 @@ cursor: pointer;
         }
       }
 
-      @keyframes glitch {
-        0% { transform: translate(0, 0); }
-        20% { transform: translate(-3px, -3px); }
-        40% { transform: translate(3px, -3px); }
-        60% { transform: translate(-3px, 3px); }
-        80% { transform: translate(3px, 3px); }
-        100% { transform: translate(0, 0); }
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+          
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
       }
-      
+
       .glitch {
         display: inline-block;
         animation: glitch 0.3s steps(2, end) infinite;
@@ -118,6 +122,7 @@ cursor: pointer;
         width: 100px;
         display: inline-block;
         cursor: pointer;
+        animation: float 3s ease-in-out infinite;
     }
     
     .estereggs{
@@ -187,7 +192,7 @@ cursor: pointer;
 
   
   #qrc{
-    height:90px;
+    height: 90px;
     width: 90px;
     position: absolute;
     top: 50%;
